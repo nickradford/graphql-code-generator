@@ -1,5 +1,5 @@
 import { DetailedError } from '@graphql-codegen/plugin-helpers';
-import { isBrowser, isNode } from './is-browser';
+import { isBrowser, isNode } from './is-browser.js';
 
 type CompositeError = Error | DetailedError;
 type ListrError = Error & { errors: CompositeError[] };
